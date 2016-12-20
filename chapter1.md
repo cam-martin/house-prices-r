@@ -236,14 +236,7 @@ ggplot(train, aes(x = SalePrice/1000, fill = RoofStyle)) + geom_histogram() +
 
 *** =sct
 ```{r,eval=FALSE}
-msg <- "There is no need to change the commands in the sample code."
-test_function_v2("ggplot", "x", eval = FALSE, index = 1, 
-                 incorrect_msg = msg)
-test_function_v2("ggplot", "x", eval = FALSE, index = 2, 
-                 incorrect_msg = paste(msg, " Simply change the `x` value in `qplot()` to `quality_group`"))
-test_function_v2("ggplot", "x", eval = FALSE, index = 3, 
-                 incorrect_msg = paste(msg, " Simply change the `x` value in `qplot()` to `waterpoint_type`"))
-test_error()
+
 success_msg("Awesome! Now let's look at a few more visualizations.")
 ```
 

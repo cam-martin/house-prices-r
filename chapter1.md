@@ -205,16 +205,16 @@ library(ggplot2)
 str(train)
 
 # Create bar plot for quantity
-qplot(quantity, data=train, geom="bar", fill=status_group) + 
+qplot(SalePrice, data=train, geom="bar", fill=Street) + 
   theme(legend.position = "top")
 
 # Create bar plot for quality_group
-qplot(___, data=train, geom="bar", fill=status_group) + 
+qplot(SalePrice, data=train, geom="bar", fill=LotConfig) + 
   theme(legend.position = "top")
 
 # Create bar plot for waterpoint_type
-qplot(___, data=train, geom="bar", fill=status_group) + 
-  theme(legend.position = "top") + 
+qplot(SalePrice, data=train, geom="bar", fill=GarageFinish) + 
+  theme(legend.position = "top") +
   theme(axis.text.x=element_text(angle = -20, hjust = 0))
 
 ```
@@ -226,15 +226,15 @@ library(ggplot2)
 str(train)
 
 # Create bar plot for quantity
-qplot(quantity, data=train, geom="bar", fill=status_group) + 
+qplot(SalePrice, data=train, geom="bar", fill=Street) + 
   theme(legend.position = "top")
 
 # Create bar plot for quality_group
-qplot(quality_group, data=train, geom="bar", fill=status_group) + 
+qplot(SalePrice, data=train, geom="bar", fill=LotConfig) + 
   theme(legend.position = "top")
 
 # Create bar plot for waterpoint_type
-qplot(waterpoint_type, data=train, geom="bar", fill=status_group) + 
+qplot(SalePrice, data=train, geom="bar", fill=GarageFinish) + 
   theme(legend.position = "top") +
   theme(axis.text.x=element_text(angle = -20, hjust = 0))
 

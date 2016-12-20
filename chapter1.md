@@ -105,29 +105,6 @@ print(head(test))
 
 *** =sct
 ```{R}
-#msg = "Have you correctly imported the `pandas` package? Use the alias `pd`."
-#test_import("pandas",  not_imported_msg = msg,  incorrect_as_msg = msg)
-
-#msg = "Do not touch the code that specifies the URLs of the training and test set csvs."
-#test_object("train_url", undefined_msg = msg, incorrect_msg = msg)
-#test_object("test_url", undefined_msg = msg, incorrect_msg = msg)
-
-#msg = "Make sure you are using the `read_csv()` function correctly"
-#test_function("pandas.read_csv", 1,
-#              args=None,
-#              not_called_msg = msg,
-#              incorrect_msg = msg,)
-
-#test_function("pandas.read_csv", 2,
-#              args=None,
-#             not_called_msg = msg,
-#              incorrect_msg = msg)
-
-#msg = "Don't forget to print the first few rows of `train` with the `.head()` method"
-#test_function("print", 1, not_called_msg = msg, incorrect_msg = msg)
-
-#msg = "Don't forget to print the first few rows of `test` with the `.head()` method"
-#test_function("print", 2, not_called_msg = msg, incorrect_msg = msg)
 
 success_msg("Well done! Now that your data is loaded in, let's see if you can understand it.")
 ```

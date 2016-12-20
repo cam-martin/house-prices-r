@@ -251,6 +251,7 @@ test_function_v2("qplot", "x", eval = FALSE, index = 3,
                  incorrect_msg = paste(msg, " Simply change the `x` value in `qplot()` to `waterpoint_type`"))
 test_error()
 success_msg("Awesome! Now let's look at a few more visualizations.")
+```
 
 --- type:NormalExercise lang:R xp:100 skills:1 key:1eeaaeb294
 ## Square Feet vs Lot Size  

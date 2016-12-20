@@ -84,53 +84,49 @@ In this course, you will learn how to apply machine learning techniques to predi
 
 *** =sample_code
 ```{R}
-# Import the Pandas library
-import pandas as pd
-
 # Load the train and test datasets to create two DataFrames
 train_url = "https://s3.amazonaws.com/assets.datacamp.com/course/Kaggle/train.csv"
-train = pd.read_csv(train_url)
+train = read.csv(train_url)
 
 test_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv"
-test = pd.read_csv(test_url)
+test = read.csv(test_url)
 
 #Print the `head` of the train and test dataframes
-print(train.head())
-print(test.head())
+print(head(train))
+print(head(test))
+
 ```
 
 *** =solution
 ```{R}
-# Import the Pandas library
-import pandas as pd
-
 # Load the train and test datasets to create two DataFrames
-train_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv"
-train = pd.read_csv(train_url)
+train_url = "https://s3.amazonaws.com/assets.datacamp.com/course/Kaggle/train.csv"
+train = read.csv(train_url)
 
 test_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv"
-test = pd.read_csv(test_url)
+test = read.csv(test_url)
 
 #Print the `head` of the train and test dataframes
-print(train.head())
-print(test.head())
+print(head(train))
+print(head(test))
+
 ```
 
 *** =sct
 ```{R}
-msg = "Have you correctly imported the `pandas` package? Use the alias `pd`."
-test_import("pandas",  not_imported_msg = msg,  incorrect_as_msg = msg)
+#msg = "Have you correctly imported the `pandas` package? Use the alias `pd`."
+#test_import("pandas",  not_imported_msg = msg,  incorrect_as_msg = msg)
 
-msg = "Do not touch the code that specifies the URLs of the training and test set csvs."
-test_object("train_url", undefined_msg = msg, incorrect_msg = msg)
-test_object("test_url", undefined_msg = msg, incorrect_msg = msg)
+#msg = "Do not touch the code that specifies the URLs of the training and test set csvs."
+#test_object("train_url", undefined_msg = msg, incorrect_msg = msg)
+#test_object("test_url", undefined_msg = msg, incorrect_msg = msg)
 
-msg = "Make sure you are using the `read_csv()` function correctly"
-test_function("pandas.read_csv", 1,
+#msg = "Make sure you are using the `read_csv()` function correctly"
+#test_function("pandas.read_csv", 1,
               args=None,
               not_called_msg = msg,
               incorrect_msg = msg,)
-test_function("pandas.read_csv", 2,
+#test_function("pandas.read_csv", 2,
               args=None,
               not_called_msg = msg,
               incorrect_msg = msg)

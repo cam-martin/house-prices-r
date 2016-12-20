@@ -143,9 +143,9 @@ success_msg("Well done! Now that your data is loaded in, let's see if you can un
 --- type:MultipleChoiceExercise lang:R xp:50 skills:2 key:5e47ef16d2
 ## Understanding your data 
 
-Before starting with the actual analysis, it's important to understand the structure of your data. Both `test` and `train` are DataFrame objects, the way pandas represent datasets. You can easily explore a DataFrame using the `.describe()` method. `.describe()` summarizes the columns/features of the DataFrame, including the count of observations, mean, max and so on. Another useful trick is to look at the dimensions of the DataFrame. This is done by requesting the `.shape` attribute of your DataFrame object. (ex. `your_data.shape`)
+Before starting with the actual analysis, it's important to understand the structure of your data. The variables loaded in the previous exercise, train and test, are data frames, R's way of representing a dataset. You can easily explore a data frame using the function `str()`. `str()` gives you information such as the data types in the data frame (e.g. int for integer), the number of observations, and the number of variables. It is a great way to get a feel for the contents of the data frame.
 
-The training and test set are already available in the workspace, as `train` and `test`. Apply `.describe()` method and print the `.shape` attribute of the training set. Which of the following statements is correct?
+The 2 data frames are already loaded into your workspace. Apply `str()` to each variable to see its dimensions and basic composition. Which of the following statements is correct?
 
 *** =instructions
 - The training set has 1460 observations and 81 variables, count for LotFrontage is 1233.
@@ -158,7 +158,6 @@ To see the description of the `test` variable try `test.describe()`.
 
 *** =pre_exercise_code
 ```{R}
-import pandas as pd
 train = pd.read_csv("https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv")
 test = pd.read_csv("https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv")
 ```

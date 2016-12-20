@@ -195,7 +195,7 @@ Use the same code that is provided for the `quantity` plot. Simply change the fi
 
 *** =pre_exercise_code
 ```{r,eval=FALSE}
-train = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv")
+train = read.csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv")
 ```
 
 *** =sample_code

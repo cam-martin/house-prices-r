@@ -76,7 +76,7 @@ In this course, you will learn how to apply machine learning techniques to predi
 *** =sample_code
 ```{R}
 # Load the train and test datasets to create two DataFrames
-train_url = "https://s3.amazonaws.com/assets.datacamp.com/course/Kaggle/train.csv"
+train_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv"
 train = read.csv(train_url)
 
 test_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv"
@@ -91,7 +91,7 @@ print(head(test))
 *** =solution
 ```{R}
 # Load the train and test datasets to create two DataFrames
-train_url = "https://s3.amazonaws.com/assets.datacamp.com/course/Kaggle/train.csv"
+train_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv"
 train = read.csv(train_url)
 
 test_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv"

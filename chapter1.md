@@ -175,6 +175,90 @@ test_mc(correct = 4, msgs = [msg1, msg2, msg3, msg4])
 success_msg("Well done! Now move on and explore some of the features in more detail.")
 
 ```
+--- type:NormalExercise xp:100 skills:1 key:f21d7e0656
+## Explore and Visualize
+
+Another great way to explore your data is to create a few visualizations. This can help you better understand the structure and potential limitations of particular variables. 
+
+Check out the structure of the variables in `train` with `str()`. You will see the majority of them are categorical. If there aren't too many categories in a variable, a bar chart can be a great way to visualize and digest your data. 
+
+In the sample code to the right, you have been provided with a command that will produce a plot that shows a breakdown of the `quantity` variable broken up by `status_group`. Here are a few variables that you can view with a similar command:
+
+- `quality_group` - The quality of the water
+- `extraction_type_class` - The kind of extraction the water point uses
+- `payment` - What the water costs
+- `source_type` - The source of the water
+- `waterpoint_type` - The kind of water point
+
+You can see descriptions of all of the variables on the competition page [here](https://www.drivendata.org/competitions/7/page/25/). 
+
+
+*** =instructions
+- The code given uses the package `ggplot2` to create a bar chart for the variable `quantity` using the aesthetic `fill` to partition by `status_group`
+- Using similar syntax, make a similar plot for `quality_group` 
+- Then again for `waterpoint_type`
+
+*** =hint
+Use the same code that is provided for the `quantity` plot. Simply change the first argument in the command.
+
+*** =pre_exercise_code
+```{r,eval=FALSE}
+train = pd.read_csv("https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv")
+```
+
+*** =sample_code
+```{r,eval=FALSE}
+# Load the ggplot package and examine train
+library(ggplot2)
+str(train)
+
+# Create bar plot for quantity
+qplot(quantity, data=train, geom="bar", fill=status_group) + 
+  theme(legend.position = "top")
+
+# Create bar plot for quality_group
+qplot(___, data=train, geom="bar", fill=status_group) + 
+  theme(legend.position = "top")
+
+# Create bar plot for waterpoint_type
+qplot(___, data=train, geom="bar", fill=status_group) + 
+  theme(legend.position = "top") + 
+  theme(axis.text.x=element_text(angle = -20, hjust = 0))
+
+```
+
+*** =solution
+```{r,eval=FALSE}
+# Load the ggplot package and examine train
+library(ggplot2)
+str(train)
+
+# Create bar plot for quantity
+qplot(quantity, data=train, geom="bar", fill=status_group) + 
+  theme(legend.position = "top")
+
+# Create bar plot for quality_group
+qplot(quality_group, data=train, geom="bar", fill=status_group) + 
+  theme(legend.position = "top")
+
+# Create bar plot for waterpoint_type
+qplot(waterpoint_type, data=train, geom="bar", fill=status_group) + 
+  theme(legend.position = "top") +
+  theme(axis.text.x=element_text(angle = -20, hjust = 0))
+
+```
+
+*** =sct
+```{r,eval=FALSE}
+msg <- "There is no need to change the commands in the sample code."
+test_function_v2("qplot", "x", eval = FALSE, index = 1, 
+                 incorrect_msg = msg)
+test_function_v2("qplot", "x", eval = FALSE, index = 2, 
+                 incorrect_msg = paste(msg, " Simply change the `x` value in `qplot()` to `quality_group`"))
+test_function_v2("qplot", "x", eval = FALSE, index = 3, 
+                 incorrect_msg = paste(msg, " Simply change the `x` value in `qplot()` to `waterpoint_type`"))
+test_error()
+success_msg("Awesome! Now let's look at a few more visualizations.")
 
 --- type:NormalExercise lang:R xp:100 skills:1 key:1eeaaeb294
 ## Square Feet vs Lot Size  

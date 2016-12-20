@@ -46,16 +46,7 @@ y = 6*9; print(y)
 
 *** =sct
 ```{R}
-msg = "Don't forget to assign the correct value to y"
-test_object("y", 
-            undefined_msg = msg, 
-            incorrect_msg = msg)
 
-msg = "Print out the resulting object, `y`!"
-test_function("print",2, 
-              not_called_msg = msg,
-              incorrect_msg = msg,
-              args=None)
 
 success_msg("Awesome! See how the console shows the result of the R code you submitted? Now that you're familiar with the interface, let's get down to business!")
 ```
@@ -123,13 +114,14 @@ print(head(test))
 
 #msg = "Make sure you are using the `read_csv()` function correctly"
 #test_function("pandas.read_csv", 1,
-              args=None,
-              not_called_msg = msg,
-              incorrect_msg = msg,)
+#              args=None,
+#              not_called_msg = msg,
+#              incorrect_msg = msg,)
+
 #test_function("pandas.read_csv", 2,
-              args=None,
-              not_called_msg = msg,
-              incorrect_msg = msg)
+#              args=None,
+#             not_called_msg = msg,
+#              incorrect_msg = msg)
 
 #msg = "Don't forget to print the first few rows of `train` with the `.head()` method"
 #test_function("print", 1, not_called_msg = msg, incorrect_msg = msg)

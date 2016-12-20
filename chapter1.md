@@ -6,7 +6,7 @@ attachments :
 --- type:NormalExercise lang:R xp:100 skills:1 key:ca2686ceeb
 ## How it works
 
-Welcome to our Kaggle House Prices: Advanced Regression tutorial. In this tutorial, you will explore how to tackle the Kaggle House Prices: Advanced Regression Techniques competition using R and Machine Learning. In case you're new to R, it's recommended that you first take our free <a target="_blank" href="https://www.datacamp.com/courses/intro-to-R-for-data-science"> Introduction to R for Data Science<a/> Tutorial. Furthermore, while not required, familiarity with machine learning techniques is a plus so you can get the maximum out of this tutorial.
+Welcome to our Kaggle House Prices: Advanced Regression tutorial. In this tutorial, you will explore how to tackle the Kaggle House Prices: Advanced Regression Techniques competition using R and Machine Learning. In case you're new to R, it's recommended that you first take our free <a target="_blank" href="https://www.datacamp.com/courses/intro-to-r"> Introduction to R for Data Science<a/> Tutorial. Furthermore, while not required, familiarity with machine learning techniques is a plus so you can get the maximum out of this tutorial.
 
 In the editor on the right, you should type R code to solve the exercises. When you hit the 'Submit Answer' button, every line of code is interpreted and executed by R and you get a message whether or not your code was correct. The output of your R code is shown in the console in the lower right corner. R makes use of the `#` sign to add comments; these lines are not run as R code, so they will not influence your result.
 

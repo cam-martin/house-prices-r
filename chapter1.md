@@ -76,10 +76,10 @@ In this course, you will learn how to apply machine learning techniques to predi
 *** =sample_code
 ```{R}
 # Load the train and test datasets to create two DataFrames
-train_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv"
+train_url = "http://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv"
 train = read.csv(train_url)
 
-test_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv"
+test_url = "http://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv"
 test = read.csv(test_url)
 
 #Print the `head` of the train and test dataframes
@@ -91,10 +91,10 @@ print(head(test))
 *** =solution
 ```{R}
 # Load the train and test datasets to create two DataFrames
-train_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv"
+train_url = "http://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv"
 train = read.csv(train_url)
 
-test_url = "https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv"
+test_url = "http://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv"
 test = read.csv(test_url)
 
 #Print the `head` of the train and test dataframes
@@ -150,8 +150,8 @@ To see the description of the `test` variable try `test.describe()`.
 
 *** =pre_exercise_code
 ```{R}
-train = pd.read_csv("https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv")
-test = pd.read_csv("https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv")
+train = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv")
+test = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/test.csv")
 ```
 
 *** =sct
@@ -195,7 +195,7 @@ Use the same code that is provided for the `quantity` plot. Simply change the fi
 
 *** =pre_exercise_code
 ```{r,eval=FALSE}
-train = pd.read_csv("https://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv")
+train = pd.read_csv("http://s3.amazonaws.com/assets.datacamp.com/production/course_2470/datasets/train.csv")
 ```
 
 *** =sample_code

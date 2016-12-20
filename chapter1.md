@@ -175,16 +175,10 @@ Another great way to explore your data is to create a few visualizations. This c
 Check out the structure of the variables in `train` with `str()`. You will see the majority of them are categorical. If there aren't too many categories in a variable, a bar chart can be a great way to visualize and digest your data. 
 
 CHANGE THIS
-In the sample code to the right, you have been provided with a command that will produce a plot that shows a breakdown of the `quantity` variable broken up by `status_group`. Here are a few variables that you can view with a similar command:
-
-- `quality_group` - The quality of the water
-- `extraction_type_class` - The kind of extraction the water point uses
-- `payment` - What the water costs
-- `source_type` - The source of the water
-- `waterpoint_type` - The kind of water point
-
+The two variables show a pattern but the thrid doesn't look like there is much of a pattern to the roof style and sale price
+descrieb the variables
+- description 
 You can see descriptions of all of the variables on the competition page [here](https://www.drivendata.org/competitions/7/page/25/). 
-
 
 *** =instructions
 - The code given uses the package `ggplot2` to create a bar chart for the variable `quantity` using the aesthetic `fill` to partition by `status_group`
